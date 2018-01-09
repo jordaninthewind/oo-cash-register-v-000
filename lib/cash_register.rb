@@ -11,4 +11,8 @@ attr_reader :total, :discount
     @total
   end
 
+  def add_item
+
+  end
+
 end
