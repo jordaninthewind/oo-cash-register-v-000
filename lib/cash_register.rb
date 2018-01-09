@@ -18,7 +18,7 @@ attr_accessor :total, :discount
 
   def apply_discount
     # binding.pry
-    if discount != nil
+    if @discount != nil
       self.total -= self.total * (discount * 0.01)
       puts "After the discount, the total comes to #{self.total}."
     else
