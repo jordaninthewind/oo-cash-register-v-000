@@ -9,7 +9,7 @@ attr_accessor :total, :discount
   end
 
   def total
-    @total
+    @total.to_i
   end
 
   def add_item(item, price, qty=1)
@@ -19,8 +19,8 @@ attr_accessor :total, :discount
   def apply_discount
     # binding.pry
     if @discount != nil
-      self.total -= self.total * (@discount * 0.01).to_i
-      # self.total.to_i
+      self.total -= self.total * (@discount * 0.01)
+
       return "After the discount, the total comes to #{self.total}."
     else
       return "There is no discount to apply."
