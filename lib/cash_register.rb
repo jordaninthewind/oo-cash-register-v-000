@@ -13,7 +13,7 @@ attr_accessor :total, :discount, :last_transaction, :items
     @last_transaction = price * qty
     self.total += @last_transaction
     self.items << item
-    # binding.pry
+    binding.pry
   end
 
   def apply_discount
