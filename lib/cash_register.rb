@@ -12,7 +12,7 @@ attr_accessor :total, :discount, :last_transaction, :items
   def add_item(item, price, qty=1)
     @last_transaction = price * qty
     self.total += @last_transaction
-    self.items.push(item)
+    self.items << item
     # binding.pry
   end
 
