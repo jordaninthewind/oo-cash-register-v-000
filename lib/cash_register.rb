@@ -7,8 +7,6 @@ attr_reader :total :discount
     @discount = discount
   end
 
-  def total
-    @total
-  end
+  
 
 end
