@@ -15,7 +15,6 @@ attr_accessor :total, :discount, :last_transaction, :items
     qty.times do
       self.items << item
     end
-    binding.pry
   end
 
   def apply_discount
