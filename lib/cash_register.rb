@@ -13,7 +13,7 @@ attr_accessor :total, :discount
 
   def add_item(item, price, qty=1)
     x = self.total
-    self.total += pricy * qty
+    self.total += price * qty
   end
 
 end
