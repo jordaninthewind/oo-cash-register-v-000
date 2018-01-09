@@ -18,4 +18,6 @@ attr_accessor :total, :discount
   def apply_discount
     self.total -= self.total * discount
 
+  end
+
 end
