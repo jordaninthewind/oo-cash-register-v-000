@@ -9,7 +9,7 @@ attr_accessor :total, :discount
   end
 
   def total
-    @total.to_i
+    @total
   end
 
   def add_item(item, price, qty=1)
