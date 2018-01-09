@@ -22,7 +22,7 @@ attr_accessor :total, :discount
       self.total -= self.total * (@discount * 0.01)
       return "After the discount, the total comes to #{self.total}."
     else
-      puts "There is no discount to apply."
+      return "There is no discount to apply."
     end
   end
 
