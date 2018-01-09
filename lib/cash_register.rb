@@ -19,9 +19,9 @@ attr_accessor :total, :discount, :last_transaction
   end
 
   def add_item(item, price, qty=1)
-    self.items << item
     @last_transaction = price * qty
     self.total += @last_transaction
+    self.items << item
   end
 
   def apply_discount
