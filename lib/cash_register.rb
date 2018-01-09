@@ -29,7 +29,7 @@ attr_accessor :total, :discount, :last_transaction, :items
 
   def void_last_transaction
     self.total -= @last_transaction
-    # self.items.pop
+    self.items.pop
   end
 
 end
